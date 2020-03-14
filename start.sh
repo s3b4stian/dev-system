@@ -3,7 +3,7 @@
 export USER=sebastian
 export DEBIAN_FRONTEND=noninteractive
 
-cd /home/$(USER)/
+cd /home/$USER/
 
 ## Update and Upgrade
 sudo apt -y update
@@ -25,9 +25,10 @@ sudo apt -y install git
 sudo apt -y install python3-pip
 
 pip3 install argcomplete
+pip3 install gitpython
 
 ## Cloning repos
-python3 ./dev-system/python/repo_clone.py --from linna --type organization --dir /home/$(USER)/html
+python3 ./dev-system/python/repo_clone.py --from linna --type organization --dir /home/$USER/html
 
 ## Cleaning
 sudo docker rm $(sudo docker ps -a -q)
