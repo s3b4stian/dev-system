@@ -1,7 +1,7 @@
 #!/bin/bash
 
-USER=sebastian
-DEBIAN_FRONTEND=noninteractive
+export USER=sebastian
+export DEBIAN_FRONTEND=noninteractive
 
 cd /home/$(USER)/
 
