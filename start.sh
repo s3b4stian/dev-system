@@ -9,12 +9,6 @@ cd /home/$USER/
 sudo apt -y update
 sudo apt -y upgrade
 
-## Installing Samba
-sudo apt -y install samba
-sudo cp ./smb/smb.conf /etc/samba/smb.conf
-
-systemctl restart smbd 
-
 ## Installing Docker and docker-compose
 sudo apt -y install docker docker.io docker-compose
 
