@@ -36,7 +36,8 @@ sudo docker-compose build
 sudo docker-compose up -d
 
 ## Installing PHP for local tools
-sudo apt install -yq software-properties-common
+sudo apt install -y software-properties-common
 sudo add-apt-repository ppa:ondrej/php
-sudo apt install -yq unzip
-sudo apt install -yq php7.4-cli php7.4-xml php7.4-mbstring php7.4-zip php-mongodb php7.4-pdo php7.4-mysql php7.4-pgsql php-xdebug php-memcached 
+sudo apt install -y unzip
+sudo apt install -y php7.4-cli php7.4-xml php7.4-mbstring php7.4-zip php-mongodb php7.4-pdo php7.4-mysql php7.4-pgsql php-xdebug php-memcached
+sudo apt autoremove
