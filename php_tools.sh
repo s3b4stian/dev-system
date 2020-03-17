@@ -23,3 +23,6 @@ wget https://github.com/infection/infection/releases/download/0.15.3/infection.p
 ## Copy update script
 cp ./php/update-all-tools.sh /home/$USER/html/bin/update-all-tools
 chmod +x /home/$USER/html/bin/update-all-tools
+
+## Copy all to sbin
+sudo cp /home/$USER/html/bin/* /usr/local/sbin
