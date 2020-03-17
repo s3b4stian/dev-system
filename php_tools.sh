@@ -37,7 +37,8 @@ chmod +x infection
 
 
 ## Copy update script
-cp ./php/update-all-tools.sh /home/$USER/html/bin/update-all-tools
+cd /home/$USER/
+cp ./dev-system/php/update-all-tools.sh /home/$USER/html/bin/update-all-tools
 chmod +x /home/$USER/html/bin/update-all-tools
 
 
