@@ -41,3 +41,12 @@ sudo add-apt-repository ppa:ondrej/php
 sudo apt install -y unzip
 sudo apt install -y php7.4-cli php7.4-xml php7.4-mbstring php7.4-zip php-mongodb php7.4-pdo php7.4-mysql php7.4-pgsql php-xdebug php-memcached
 sudo apt autoremove
+
+## Installing Postgresql client
+curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+
+sudo apt install -y postgresql-client-12
+
+## Installing Mysql Client
+sudo apt install -y mysql-client
