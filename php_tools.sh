@@ -39,8 +39,10 @@ chmod +x infection
 ## Copy update script
 cd /home/$USER/
 cp ./dev-system/php/update-all-tools.sh /home/$USER/html/bin/update-all-tools
+cp ./dev-system/php/cs-fix-all.sh /home/$USER/html/bin/cs-fix-all
+cp ./dev-system/php/repository.txt /home/$USER/html/bin/repository.txt
 chmod +x /home/$USER/html/bin/update-all-tools
-
+chmod +x /home/$USER/html/bin/cs-fix-all
 
 ## Copy all to sbin
 sudo cp /home/$USER/html/bin/* /usr/local/sbin
