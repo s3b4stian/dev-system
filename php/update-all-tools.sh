@@ -20,7 +20,7 @@ sudo ./php-cs-fixer selfupdate
 
 # Update infection
 sudo rm infection
-sudo wget https://github.com/infection/infection/releases/download/0.15.3/infection.phar
+sudo wget https://github.com/infection/infection/releases/download/0.16.6/infection.phar
 sudo chmod +x infection.phar
 sudo mv infection.phar infection
 sudo ./infection --version

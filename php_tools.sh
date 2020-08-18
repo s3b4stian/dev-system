@@ -10,7 +10,7 @@ rm /home/$USER/html/bin/*
 ## Download PHP tools
 
 ### PHP cs Fixer
-wget https://github.com/FriendsOfPHP/PHP-CS-Fixer/releases/download/v2.16.1/php-cs-fixer.phar -P /home/$USER/html/bin
+wget https://github.com/FriendsOfPHP/PHP-CS-Fixer/releases/download/v2.16.4/php-cs-fixer.phar -P /home/$USER/html/bin
 
 ### Composer
 wget https://getcomposer.org/composer-stable.phar -P /home/$USER/html/bin
@@ -19,7 +19,7 @@ wget https://getcomposer.org/composer-stable.phar -P /home/$USER/html/bin
 wget https://phar.phpunit.de/phpunit.phar -P /home/$USER/html/bin
 
 ### Infection
-wget https://github.com/infection/infection/releases/download/0.15.3/infection.phar -P /home/$USER/html/bin
+wget https://github.com/infection/infection/releases/download/0.16.6/infection.phar -P /home/$USER/html/bin
 
 
 ## Make all executable
