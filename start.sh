@@ -24,6 +24,10 @@ pip3 install gitpython
 ## Cloning repos
 python3 ./dev-system/python/repo_clone.py --from linna --type organization --dir /home/$USER/html
 
+## Change owner and group
+sudo chown -R $USER /home/$USER/html
+sudo chgrp -R $USER /home/$USER/html
+
 ## Cleaning
 sudo docker rm $(sudo docker ps -a -q)
 sudo docker rmi $(sudo docker images -a -q)
