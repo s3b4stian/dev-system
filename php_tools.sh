@@ -3,14 +3,17 @@
 USER=sebastian
 VER_CS_FIXER=v2.16.7
 VER_INFECTION=0.20.2
+RED='\033[1;31m'
+NC='\033[0m' # No Color
 
+## Create directory or clean if already present
+printf "${RED}Create directory or clean if already present${NC}\n"
 
-## create directory and clean if already present
 mkdir /home/$USER/html/bin
 rm /home/$USER/html/bin/*
 
-
 ## Download PHP tools
+printf "${RED}Download PHP tools${NC}\n"
 
 ### PHP cs Fixer
 wget https://github.com/FriendsOfPHP/PHP-CS-Fixer/releases/download/$VER_CS_FIXER/php-cs-fixer.phar -P /home/$USER/html/bin
@@ -26,6 +29,8 @@ wget https://github.com/infection/infection/releases/download/$VER_INFECTION/inf
 
 
 ## Make all executable
+printf "${RED}Make all executable${NC}\n"
+
 cd /home/$USER/html/bin
 
 mv php-cs-fixer.phar php-cs-fixer
@@ -38,8 +43,9 @@ chmod +x composer
 chmod +x phpunit
 chmod +x infection
 
+## Copy scripts
+printf "${RED}Copy scripts${NC}\n"
 
-## Copy update script
 cd /home/$USER/
 cp ./dev-system/php/update-all-tools.sh /home/$USER/html/bin/update-all-tools
 cp ./dev-system/php/cs-fix-all.sh /home/$USER/html/bin/cs-fix-all
@@ -48,4 +54,6 @@ chmod +x /home/$USER/html/bin/update-all-tools
 chmod +x /home/$USER/html/bin/cs-fix-all
 
 ## Copy all to sbin
+printf "${RED}Copy all to sbin${NC}\n"
+
 sudo cp /home/$USER/html/bin/* /usr/local/sbin
