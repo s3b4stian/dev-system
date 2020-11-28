@@ -1,6 +1,7 @@
 #!/bin/bash
 
 USER=sebastian
+VER_INFECTION=0.20.2
 
 cd /home/$USER/html/bin
 
@@ -20,7 +21,7 @@ sudo ./php-cs-fixer selfupdate
 
 # Update infection
 sudo rm infection
-sudo wget https://github.com/infection/infection/releases/download/0.16.6/infection.phar
+sudo wget https://github.com/infection/infection/releases/download/$VER_INFECTION/infection.phar
 sudo chmod +x infection.phar
 sudo mv infection.phar infection
 sudo ./infection --version
