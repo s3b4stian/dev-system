@@ -43,7 +43,7 @@ sudo docker-compose up -d
 sudo apt install -y software-properties-common
 sudo add-apt-repository ppa:ondrej/php
 sudo apt install -y unzip
-sudo apt install -y php7.4-cli php7.4-xml php7.4-mbstring php7.4-zip php7.4-mongodb php7.4-msgpack php7.4-igbinary php7.4-pdo php7.4-mysql php7.4-pgsql php-xdebug php-memcached
+sudo apt install -y php8.0-cli php8.0-xml php8.0-mbstring php8.0-zip php8.0-mongodb php8.0-msgpack php8.0-igbinary php8.0-pdo php8.0-mysql php8.0-pgsql php8.0-xdebug php8.0-memcached
 sudo apt autoremove
 
 ## Installing Postgresql client
