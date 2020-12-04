@@ -2,7 +2,6 @@
 
 source config.sh
 
-cd $HOME
 
 ## Update and Upgrade
 ## ------------------

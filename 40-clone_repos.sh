@@ -2,13 +2,12 @@
 
 source config.sh
 
-cd $HOME
 
 ## Cloning repos
-python3 ./dev-system/python/repo_clone.py --from linna --type organization --dir $HOME/html
+python3 cd /home/$USER/dev-system/python/repo_clone.py --from linna --type organization --dir /home/$USER/html
 
 ## Change owner and group
-sudo chown -R $USER $HOME/html
-sudo chgrp -R $USER $HOME/html
+sudo chown -R $USER /home/$USER/html
+sudo chgrp -R $USER /home/$USER/html
 
-ls -la $HOME/html
+ls -la /home/$USER/html

@@ -15,6 +15,6 @@ git clone https://github.com/s3b4stian/dev-compose.git
 ## -----------------------
 printf  "\n${RED}Build Dockes containers${NC}\n"
 
-cd dev-compose
+cd /home/$USER/dev-compose
 sudo docker-compose build
 sudo docker-compose up -d

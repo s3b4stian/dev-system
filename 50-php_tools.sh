@@ -48,10 +48,9 @@ chmod +x infection
 ## ------------
 printf "${RED}Copy scripts${NC}\n"
 
-cd /home/$USER
-cp ./dev-system/php/update-all-tools.sh /home/$USER/html/bin/update-all-tools
-cp ./dev-system/php/cs-fix-all.sh /home/$USER/html/bin/cs-fix-all
-cp ./dev-system/php/repository.txt /home/$USER/html/bin/repository.txt
+cp /home/$USER/dev-system/php/update-all-tools.sh /home/$USER/html/bin/update-all-tools
+cp /home/$USER/dev-system/php/cs-fix-all.sh /home/$USER/html/bin/cs-fix-all
+cp /home/$USER/dev-system/php/repository.txt /home/$USER/html/bin/repository.txt
 chmod +x /home/$USER/html/bin/update-all-tools
 chmod +x /home/$USER/html/bin/cs-fix-all
 
