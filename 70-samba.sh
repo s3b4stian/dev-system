@@ -1,11 +1,8 @@
 #!/bin/bash
 
-RED='\e[91m'
-YELLOW='\e[93m'
-NC='\e[0m'
-export DEBIAN_FRONTEND=noninteractive
+./config.sh
 
-cd $HOME
+cd /home/$user
 
 ## Installing Samba
 printf  "\n${RED}Installing Samba${NC}\n"
