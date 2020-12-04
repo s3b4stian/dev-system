@@ -49,7 +49,7 @@ chmod +x infection
 ## ------------
 printf "${RED}Copy scripts${NC}\n"
 
-cd /home/$USER/
+cd $HOME
 cp ./dev-system/php/update-all-tools.sh $HOME/html/bin/update-all-tools
 cp ./dev-system/php/cs-fix-all.sh $HOME/html/bin/cs-fix-all
 cp ./dev-system/php/repository.txt $HOME/html/bin/repository.txt
@@ -61,7 +61,7 @@ chmod +x $HOME/html/bin/cs-fix-all
 ## ----------------
 printf "${RED}Copy all to sbin${NC}\n"
 
-sudo cp /home/$USER/html/bin/* /usr/local/sbin
+sudo cp $HOME/html/bin/* /usr/local/sbin
 
 php-cs-fixer --version
 composer --version
