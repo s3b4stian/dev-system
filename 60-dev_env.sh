@@ -1,11 +1,8 @@
 #!/bin/bash
 
-RED='\e[91m'
-YELLOW='\e[93m'
-NC='\e[0m'
-export DEBIAN_FRONTEND=noninteractive
+source config.sh
 
-cd $HOME
+cd /home/$USER
 
 ## Cloning dev environment repository
 ## ----------------------------------

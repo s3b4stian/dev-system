@@ -1,9 +1,6 @@
 #!/bin/bash
 
-export USER=sebastian
 export DEBIAN_FRONTEND=noninteractive
-
-cd $HOME
 
 ./10-prepare.sh
 ./20-local_php7.4.sh
