@@ -12,4 +12,4 @@ chmod +x ./dev-system/*.sh
 ./dev-system/start.sh
 ```
 
-Every script can be ran standalone.
+Every script can be run standalone.
