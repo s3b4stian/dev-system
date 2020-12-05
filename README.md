@@ -12,4 +12,4 @@ chmod +x ./dev-system/*.sh
 ./dev-system/start.sh
 ```
 
-Every script can be run standalone.
+> **Note:** Every script can be run standalone without `sudo` command. Where sudo is required, the script stop and ask for the `sudo` password

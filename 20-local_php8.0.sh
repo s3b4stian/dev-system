@@ -15,10 +15,10 @@ dpkg -l | grep '^rc' | awk '{print $2}' | sudo xargs dpkg --purge
 ## ----------------------------------
 printf  "\n${RED}Installing PHP 8.0 for local tools${NC}\n"
 
-sudo add-apt-repository ppa:ondrej/php
-sudo apt install -y unzip
-sudo apt install -y php8.0-cli php8.0-xml php8.0-mbstring php8.0-zip php8.0-mongodb php8.0-msgpack php8.0-igbinary php8.0-pdo php8.0-mysql php8.0-pgsql php8.0-xdebug php8.0-memcached
-sudo apt autoremove
+sudo add-apt-repository -y ppa:ondrej/php
+sudo apt-get install -y unzip
+sudo apt-get install -y php8.0-cli php8.0-xml php8.0-mbstring php8.0-zip php8.0-msgpack php8.0-igbinary php8.0-pdo php8.0-mysql php8.0-pgsql php8.0-xdebug php8.0-memcached
+sudo apt-get autoremove
 
 
 ## Configuring Xdebug for php-cli

@@ -15,8 +15,8 @@ dpkg -l | grep '^rc' | awk '{print $2}' | sudo xargs dpkg --purge
 ## ----------------------------------
 printf  "\n${RED}Installing PHP 7.4 for local tools${NC}\n"
 
-sudo add-apt-repository ppa:ondrej/php
-sudo apt install -y unzip
-sudo apt install -y php7.4-cli php7.4-xml php7.4-mbstring php7.4-zip php7.4-mongodb php7.4-msgpack php7.4-igbinary php7.4-pdo php7.4-mysql php7.4-pgsql php7.4-xdebug php7.4-memcached
-sudo apt autoremove
+sudo add-apt-repository -y ppa:ondrej/php
+sudo apt-get install -y unzip
+sudo apt-get install -y php7.4-cli php7.4-xml php7.4-mbstring php7.4-zip php7.4-mongodb php7.4-msgpack php7.4-igbinary php7.4-pdo php7.4-mysql php7.4-pgsql php7.4-xdebug php7.4-memcached
+sudo apt-get autoremove
 printf "${YELLOW}";php --version;printf "${NC}\n"
