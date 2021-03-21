@@ -2,8 +2,8 @@
 
 source config.sh
 
-VER_CS_FIXER=v2.17.1
-VER_INFECTION=0.20.2
+VER_CS_FIXER=v2.18.4
+VER_INFECTION=0.21.4
 
 ## Create directory or clean if already present
 ## --------------------------------------------
