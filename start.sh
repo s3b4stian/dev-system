@@ -3,8 +3,9 @@
 export DEBIAN_FRONTEND=noninteractive
 
 ./10-prepare.sh
-./20-local_php7.4.sh
-./20-local_php8.0.sh
+#./20-local_php7.4.sh
+#./20-local_php8.0.sh
+./20-local_php8.1.sh
 ./30-local_database.sh
 ./40-clone_repos.sh
 ./50_php_tools.sh
