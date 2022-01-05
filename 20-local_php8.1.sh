@@ -11,9 +11,9 @@ dpkg -l | grep php | awk '{print $2}' | sudo xargs apt -y remove
 dpkg -l | grep '^rc' | awk '{print $2}' | sudo xargs dpkg --purge
 
 
-## Installing PHP 8.0 for local tools
+## Installing PHP 8.1 for local tools
 ## ----------------------------------
-printf  "\n${RED}Installing PHP 8.0 for local tools${NC}\n"
+printf  "\n${RED}Installing PHP 8.1 for local tools${NC}\n"
 
 sudo add-apt-repository -y ppa:ondrej/php
 sudo apt-get install -y unzip
