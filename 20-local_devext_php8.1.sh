@@ -13,11 +13,11 @@ dpkg -l | grep '^rc' | awk '{print $2}' | sudo xargs dpkg --purge
 
 ## Installing PHP 8.1
 ## ------------------
-printf  "\n${RED}Installing PHP 8.0${NC}\n"
+printf  "\n${RED}Installing PHP 8.1${NC}\n"
 
 sudo add-apt-repository -y ppa:ondrej/php
 sudo apt-get install -y unzip
-sudo apt-get install -y php8.0 php8.0-fpm php8.0-common php8.0-cli php8.0-xml php8.0-mbstring php8.0-zip php8.0-msgpack php8.0-igbinary php8.0-pdo php8.0-mysql php8.0-pgsql php8.0-xdebug php8.0-memcached php8.0-mongodb php8.0-curl
+sudo apt-get install -y php8.1 php8.1-fpm php8.1-dev php8.1-common php8.1-cli php8.1-xml php8.1-mbstring php8.1-zip php8.1-msgpack php8.1-igbinary php8.1-pdo php8.1-mysql php8.1-pgsql php8.1-xdebug php8.1-memcached php8.1-mongodb php8.1-curl
 sudo apt-get autoremove
 
 ## Installing Apache
@@ -39,7 +39,7 @@ sudo a2dissite 000-default default-ssl
 sudo rm /etc/apache2/sites-available/*
 
 # Copy Apache and PHP configuration files
-sudo cp ./apache/www.conf /etc/php/8.0/fpm/pool.d/www.conf
+sudo cp ./apache/www.conf /etc/php/8.1/fpm/pool.d/www.conf
 sudo cp ./apache/php-fpm.conf /etc/apache2/conf-enabled/php-fpm.conf
 sudo cp ./apache/site.conf /etc/apache2/sites-available/site.conf
 sudo cp ./apache/site_ssl.conf /etc/apache2/sites-available/site_ssl.conf
@@ -61,7 +61,7 @@ sudo cp /tmp/ssl.crt /etc/apache2/ssl
 
 # Restart Services
 sudo systemctl restart apache2
-sudo systemctl restart php8.0-fpm
+sudo systemctl restart php8.1-fpm
 
 ## Configuring Xdebug for php-cli
 ## ------------------------------
