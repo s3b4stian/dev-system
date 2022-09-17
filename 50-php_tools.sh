@@ -2,8 +2,8 @@
 
 source config.sh
 
-VER_CS_FIXER=v3.8.0
-VER_INFECTION=0.26.5
+VER_CS_FIXER=v3.11.0
+VER_INFECTION=0.26.15
 
 ## Create directory or clean if already present
 ## --------------------------------------------
@@ -25,6 +25,8 @@ wget https://getcomposer.org/composer-stable.phar -P /home/$USER/html/bin
 wget https://phar.phpunit.de/phpunit.phar -P /home/$USER/html/bin
 ### Infection
 wget https://github.com/infection/infection/releases/download/$VER_INFECTION/infection.phar -P /home/$USER/html/bin
+### PHP Documentor
+wget wget https://phpdoc.org/phpDocumentor.phar -P /home/$USER/html/bin
 
 
 ## Make all executable
@@ -37,12 +39,13 @@ mv php-cs-fixer.phar php-cs-fixer
 mv composer-stable.phar composer
 mv phpunit.phar phpunit
 mv infection.phar infection
+mv phpDocumentor.phar phpDocumentor
 
 chmod +x php-cs-fixer
 chmod +x composer
 chmod +x phpunit
 chmod +x infection
-
+chmod +x phpDocumentor
 
 ## Copy scripts
 ## ------------
@@ -65,3 +68,4 @@ php-cs-fixer --version
 composer --version
 phpunit --version
 infection --version
+phpDocumentor --version

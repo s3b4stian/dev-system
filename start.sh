@@ -10,5 +10,6 @@ export DEBIAN_FRONTEND=noninteractive
 ./40-clone_repos.sh
 ./50_php_tools.sh
 ./60-dev_env.sh
-./70-netplan.sh
+#./70-netplan-20.04.sh
+./70-netplan-22.04.sh
 ./70-samba.sh
