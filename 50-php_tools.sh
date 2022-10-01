@@ -39,13 +39,13 @@ mv php-cs-fixer.phar php-cs-fixer
 mv composer-stable.phar composer
 mv phpunit.phar phpunit
 mv infection.phar infection
-mv phpDocumentor.phar phpDocumentor
+mv phpDocumentor.phar php-doc
 
 chmod +x php-cs-fixer
 chmod +x composer
 chmod +x phpunit
 chmod +x infection
-chmod +x phpDocumentor
+chmod +x php-doc
 
 ## Copy scripts
 ## ------------
