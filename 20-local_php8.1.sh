@@ -17,7 +17,7 @@ printf  "\n${RED}Installing PHP 8.1 for local tools${NC}\n"
 
 sudo add-apt-repository -y ppa:ondrej/php
 sudo apt-get install -y unzip
-sudo apt-get install -y php8.1-cli php8.1-xml php8.1-mbstring php8.1-zip php8.1-msgpack php8.1-igbinary php8.1-pdo php8.1-mysql php8.1-pgsql php8.1-xdebug php8.1-memcached php8.1-mongodb php8.1-curl
+sudo apt-get install -y php8.1-cli php8.1-xml php8.1-mbstring php8.1-zip php8.1-msgpack php8.1-igbinary php8.1-pdo php8.1-mysql php8.1-pgsql php8.1-xdebug php8.1-memcached php8.1-mongodb php8.1-curl php8.1-redis
 sudo apt-get autoremove
 
 

@@ -17,7 +17,7 @@ printf  "\n${RED}Installing PHP 8.2 for local tools${NC}\n"
 
 sudo add-apt-repository -y ppa:ondrej/php
 sudo apt-get install -y unzip
-sudo apt-get install -y php8.2-cli php8.2-xml php8.2-mbstring php8.2-zip php8.2-msgpack php8.2-igbinary php8.2-pdo php8.2-mysql php8.2-pgsql php8.2-xdebug php8.2-memcached php8.2-mongodb php8.2-curl
+sudo apt-get install -y php8.2-cli php8.2-xml php8.2-mbstring php8.2-zip php8.2-msgpack php8.2-igbinary php8.2-pdo php8.2-mysql php8.2-pgsql php8.2-xdebug php8.2-memcached php8.2-mongodb php8.2-curl php8.2-redis
 sudo apt-get autoremove
 
 
