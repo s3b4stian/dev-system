@@ -9,7 +9,7 @@ NC='\e[0m'
 USER=sebastian
 
 ## Infection version
-VER_INFECTION=0.20.2
+VER_INFECTION=0.26.19
 
 cd /home/$USER/html/bin
 
