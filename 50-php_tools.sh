@@ -2,7 +2,7 @@
 
 source config.sh
 
-VER_CS_FIXER=v3.14.4
+VER_CS_FIXER=v3.15.1
 VER_INFECTION=0.26.19
 
 ## Create directory or clean if already present
