@@ -68,4 +68,4 @@ php-cs-fixer --version
 composer --version
 phpunit --version
 infection --version
-phpDocumentor --version
+php-doc --version
