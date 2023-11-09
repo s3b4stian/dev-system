@@ -47,7 +47,7 @@ chmod +x php-cs-fixer
 chmod +x composer
 chmod +x phpunit
 chmod +x infection
-chmod +x php-doc
+chmod +x php-doc.phar
 
 ## Copy scripts
 ## ------------
@@ -59,15 +59,14 @@ cp /home/$USER/dev-system/php/repository.txt /home/$USER/html/bin/repository.txt
 chmod +x /home/$USER/html/bin/update-all-tools
 chmod +x /home/$USER/html/bin/cs-fix-all
 
+# make link to permit the compressed phar to work
+sudo ln -s php-doc.phar php-doc
 
 ## Copy all to sbin
 ## ----------------
 printf "${RED}Copy all to sbin${NC}\n"
 
 sudo cp /home/$USER/html/bin/* /usr/local/sbin
-
-# make link to permit the compressed phar to work
-sudo ln -s /usr/local/sbin/php-doc.phar php-doc
 
 php-cs-fixer --version
 composer --version
